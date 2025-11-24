@@ -562,10 +562,10 @@ if st.session_state.submitted:
     st.markdown(f"### 🟦 Puntaje final: **{score} / {len(st.session_state.selected_questions)}**")
 
     if st.button("🔄 Reiniciar"):
-        st.session_state.selected_questions = []
-        st.session_state.answers = {}
-        st.session_state.submitted = False
-        st.session_state.start_time = None
+        for key in list(st.session_state.keys()):
+            del st.session_state[key]
+        st.rerun()
+
 
 # ------------------------------------------------------------
 # FOOTER 
