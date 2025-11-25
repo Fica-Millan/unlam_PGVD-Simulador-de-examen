@@ -1,8 +1,6 @@
 import streamlit as st
 import random
 import time
-import os
-from pdf2image import convert_from_path
 
 # ------------------------------------------------------------
 # Banco de preguntas (6 clases – 120 preguntas)
@@ -498,7 +496,7 @@ with st.expander("🔸 Descargar Resumen de las clases de PGVD"):
     with open("resumen_clases_pgvd.pdf", "rb") as pdf_file:
         st.download_button(
             label="📥 Descargar PDF",
-            data=pdf_file,
+            data=pdf_file.read(),   
             file_name="resumen_clases_pgvd.pdf",
             mime="application/pdf"
         )
