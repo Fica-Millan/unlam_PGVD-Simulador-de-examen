@@ -24,6 +24,10 @@ La aplicación ofrece un banco de 120 preguntas de opción múltiple distribuida
 - **Modo Aleatorio**: Preguntas en orden aleatorio para cada simulación
 - **Retroalimentación Inmediata**: Verificación de respuestas en tiempo real
 - **Seguimiento de Progreso**: Visualización de puntuación y desempeño
+- **Recursos Descargables**: 
+  - Mapa conceptual de Big Data (imagen)
+  - Resumen completo de las clases (PDF)
+- **Cronómetro Integrado**: Seguimiento del tiempo durante el examen
 
 ## 🔸 Requisitos
 

@@ -1,6 +1,8 @@
 import streamlit as st
 import random
 import time
+import os
+from pdf2image import convert_from_path
 
 # ------------------------------------------------------------
 # Banco de preguntas (6 clases – 120 preguntas)
@@ -478,6 +480,29 @@ def obtener_tiempo_transcurrido():
 # Configuración de la página
 # ------------------------------------------------------------
 st.title("Simulador de Examen")
+
+
+# --- Resumen gráfico ---
+with st.expander("🔸 Ver Mapa conceptual"):
+    st.image("mapa_conceptual_big_data.png")
+    with open("mapa_conceptual_big_data.png", "rb") as img_file:
+        st.download_button(
+            label="📥 Descargar imagen",
+            data=img_file,
+            file_name="mapa_conceptual_big_data.png",
+            mime="image/png"
+        )
+    
+# --- Resumen escrito ---         
+with st.expander("🔸 Descargar Resumen de las clases de PGVD"):
+    with open("resumen_clases_pgvd.pdf", "rb") as pdf_file:
+        st.download_button(
+            label="📥 Descargar PDF",
+            data=pdf_file,
+            file_name="resumen_clases_pgvd.pdf",
+            mime="application/pdf"
+        )
+            
 st.markdown("Selecciona una clase para comenzar el examen.")
 
 # ------------------------------------------------------------
