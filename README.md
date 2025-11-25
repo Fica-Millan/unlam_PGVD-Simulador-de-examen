@@ -2,7 +2,10 @@
 
 ## 🔸 Descripción
 
-**Simulador de Examen PGVD** es una aplicación interactiva desarrollada con Streamlit que permite practicar para el examen final de la materia Procesamiento de Grandes Volumenes de Datos, correspondiente a la Especializacion en Ciencia de Datos de la UNLaM. 
+**Simulador de Examen PGVD** es una aplicación interactiva desarrollada con Streamlit que permite practicar para el examen final de la materia Procesamiento de Grandes Volúmenes de Datos, correspondiente a la Especialización en Ciencia de Datos de la UNLaM.
+
+👉 La aplicación está disponible online aquí:
+🔗 https://unlam-simulador-de-examen-pgvd.streamlit.app/
 
 La aplicación ofrece un banco de 120 preguntas de opción múltiple distribuidas en 6 clases temáticas, permitiendo a los estudiantes evaluar su conocimiento en un entorno similar al del examen real.
 

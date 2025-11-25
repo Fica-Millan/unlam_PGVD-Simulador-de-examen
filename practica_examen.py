@@ -510,7 +510,7 @@ if st.button("🎯 Generar examen de la clase"):
         todas = []
         for c in clases_existentes:
             todas.extend(questions[c])
-        num_questions = min(20, len(todas))  # integrador con 20 preguntas
+        num_questions = min(12, len(todas))  # integrador con 12 preguntas
         st.session_state.selected_questions = random.sample(todas, k=num_questions)
     else:
         num_questions = min(10, len(questions[clase]))
