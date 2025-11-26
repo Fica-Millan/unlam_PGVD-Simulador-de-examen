@@ -413,7 +413,7 @@ questions = {
 
         ("¿Qué algoritmo se usa para elegir partición por defecto?", 
         ["Hash por clave", "Round robin", "Prioridad", "Tiempo de llegada"], 
-        1),
+        0),
 
         ("Kafka garantiza tolerancia a fallos mediante:", 
         ["Redundancia de offsets", "Replicación de particiones", "Zookeeper distribuido", "Duplicación de producers"], 
